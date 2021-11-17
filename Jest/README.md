@@ -382,3 +382,5 @@ El cual nos muestra el siguiente reporte:
 ![image](https://user-images.githubusercontent.com/30850990/142173424-939dc35e-0b2f-44aa-b3f9-63576fd4030f.png)
 
 - Como se puede observar tanto en el reporte por consola o el de html, se cubrio el 100% de los archivos y lineas. Ya que se valido todo lo implementado pero recordar la manera en que se hizo **Primero hacer la prueba y luego el desarrollo**
+
+**Cabe resaltar que el implementar pruebas no indica que no puedan existir defectos o errores en el desarrollo pero busca reducir esa cantidad de posibles errores.**
