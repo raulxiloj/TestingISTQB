@@ -1,0 +1,31 @@
+{
+  "name": "api-resultado",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --watchAll --no-cache",
+    "test:coverage": "jest --watchAll --no-cache --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/test/setup.js"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "mongodb-memory-server": "^8.0.2",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  }
+}
