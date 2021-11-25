@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('posts').style.display = 'block';
+        }, 3000);
+    };
+
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Seminario de Sistemas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('homepage') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('homepage') }}">Crear tarea</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>Pagina principal</h3>
+
+        {% if posts|length > 0 %}
+        <ol id="posts" style="display: none">
+            {% for post in posts %}
+            <li class="post"><a href="{{ url_for('see_post', title=post['title']) }}" class="post-link">{{ post['title'] }}</a></li>
+            {% endfor %}
+        </ol>
+        {% endif %}
+    </div>
+    
+</body>
+</html>
