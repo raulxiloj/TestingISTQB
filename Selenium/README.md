@@ -139,4 +139,6 @@ Para ejecutar las pruebas en el entorno virtual
 ```
 
 Salida esperada:
-![image](https://user-images.githubusercontent.com/30850990/143431969-89641ffc-9a39-4b76-b63b-02a56c1f8f2f.png)
+
+![image](https://user-images.githubusercontent.com/30850990/143462784-0837f466-8c63-412a-b955-4016ec3f2bfa.png)
+- La cual nos indica que un escenario (el que creamos en `navigation.feature`) 
