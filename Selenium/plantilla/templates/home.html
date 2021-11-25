@@ -2,11 +2,32 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        
     </head>
     <body>
-        <div class="container">
-            <h1>This is the homepage</h1>
-            <a href="{{ url_for('blog_page') }}" class="nav-link" id="blog-link">Go to blog</a>
-        </div>
+
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="{{ url_for('homepage') }}">Seminario de Sistemas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{{ url_for('blog_page') }}" >Ir al blog<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <main class="container mt-3">
+            <h3>Taller 3 - Selenium.</h3>
+            <span class="lead">
+                Selenium es un entorno de pruebas de software para aplicaciones basadas en la web. Es funcional para todos los navegadores, funciona
+                en los principales sistemas operativos y sus comandos estan escritos en varios lenguajes de programacion (Python, Java, C#) <span class="font-italic">este taller se desarrollo en Python</span>.
+            </p>
+          </main>
+
     </body>
 </html>
